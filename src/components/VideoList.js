@@ -1,0 +1,13 @@
+import React from 'react';
+import VideoItem from './VideoItem';
+
+const VideoList = ({ videos , onVideoSelect, addToQueue}) => {
+
+    const renderedList = videos.map((video) => {
+        return <VideoItem key={video.etag} onVideoSelect={onVideoSelect} video={video} addToQueue={addToQueue}/>
+    });
+
+    return <div className="ui relaxed divided list">{renderedList}</div>
+};
+
+export default VideoList;

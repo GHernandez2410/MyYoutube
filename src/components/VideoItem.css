@@ -1,0 +1,21 @@
+.video-item {
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer!important;
+}
+
+.video-item.item img {
+    max-width: 180px;
+}
+
+.toogle {
+  margin-top: 50px;
+}
+
+.search-margin {
+    margin-top: 10px !important;
+}
+
+.grey-colour {
+    background-color: #323639;
+}
